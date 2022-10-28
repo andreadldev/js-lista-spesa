@@ -1,5 +1,6 @@
 document.getElementById("list");
 const shoppingList = ["Pane", "Latte", "Uova", "Caffè", "Pasta"];
+const lastItem = shoppingList[shoppingList.length - 0];
 
 let done = false;
 let i = 0;
@@ -7,7 +8,7 @@ let i = 0;
 while (done != true) {
     console.log(shoppingList[i]);
     i++;
-    if (i == 5) {
+    if (shoppingList[i] == lastItem) {
         done = true;
     }
 }
